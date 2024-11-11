@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +13,74 @@
 
     <main>
         <form action=""> 
-    <fieldset>
+           <fieldset>
         <div>
         <legend> Preencha os campos </legend>
         <label for="Nome"> Nome </label>
         <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome"/>
         </div>
+
         <div>
         <label for="email"> Email</label>
         <input type="email" name="Email" id="email" placeholder="Digite seu email"/>
         </div>
-    </fieldset>        
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
+        </div>
+            </fieldset>
+            
+        <fieldset>
+            <label for="estados">Estados:</label>
+            <select name="estados" id="estados">
+            <option value="Sergipe">SE</option>
+            <option value="Rio de Janeiro">RJ</option>
+            <option value="São Paulo">SP</option>
+            <option value="Minas Gerais">MG</option>    
+            </select>
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento"/>
+
+            <label for="foto">Selecione uma foto</label>
+            <input type="file" name="foto" id="foto"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Você é um robô?</legend>
+            <img
+            src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
+            width="100"
+            alt="Figura de um robô verde"
+            />
+
+            <img
+            src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
+            width="100"
+            alt="Figura de um robô verde"
+            />
+        <div>   
+            <input type="radio" name="robô" id="sim"/>
+            <label for="sim">Sou um robô </label>
+        </div>
+        <div>
+            <input type="radio" name="robô" id="não"/>
+            <label for="não">Não sou um robô </label>
+        </div>
+        <div>
+            <input type="radio" name="robô" id="Talvez"/>
+            <label for="talvez">Talvez eu seja um robô </label>
+        </div>
+
+        <input type="checkbox" name="acordo" id="acordo" />
+        <label for="acordo">Declaro que sou um robô</label>
+
+        </fieldset>
+
+    <input type="submit" value="Enviar formulário"/>  
+    
+    <button type="submit"> Enviar</button>
 
         </form>
     </main>
